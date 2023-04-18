@@ -4,7 +4,7 @@ import com.typesafe.scalalogging.Logger
 import com.github.polomarcus.utils.ClimateService
 
 object Main {
-  def main(args: Array[String]) {
+  def main(args: Array[String]) { //help: this is the entry point of our app
     val logger = Logger(this.getClass)
     logger.info("Used `sbt run` to start the app")
 
