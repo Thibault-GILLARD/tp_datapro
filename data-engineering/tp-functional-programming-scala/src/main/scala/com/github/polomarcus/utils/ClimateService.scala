@@ -75,6 +75,7 @@ object ClimateService {
    * Bonus: for quality check : count how many None values we have
    *
    * @param list
+   * finish
    */
   def showCO2Data(list: List[Option[CO2Record]]): Unit = {
     logger.info("Call ClimateService.filterDecemberData here")
