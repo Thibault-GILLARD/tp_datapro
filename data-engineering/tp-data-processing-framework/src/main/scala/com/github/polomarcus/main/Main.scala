@@ -63,7 +63,12 @@ object Main {
     // Learn about Parquet : https://spark.apache.org/docs/3.2.1/sql-data-sources-parquet.html
     // Learn about partition : https://spark.apache.org/docs/3.2.1/sql-data-sources-load-save-functions.html#bucketing-sorting-and-partitioning
 
+    val outputPath = "./output-parquet/"
 
+    enrichedDataset
+      .write
+      .partitionBy("date", "media")
+      .parquet(outputPath)
 
 
     logger.info("Stopping the app")
