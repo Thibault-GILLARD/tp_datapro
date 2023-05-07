@@ -48,4 +48,7 @@ class NewsServiceTest extends AnyFunSuite {
 
     assert(input.sameElements(output))
   }
+  test("getNumberOfNewsAboutClimate") {
+    assert(NewsService.getNumberOfNewsAboutClimate(fakeListNews) == 1)
+  }
 }
